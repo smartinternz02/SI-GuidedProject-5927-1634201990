@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Recommended Books</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+.header {	
+			top:0;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: #091425;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Josefin Sans';
+			font-size: 2vw;
+			width: 100%;
+			height:8%;
+			text-align: center;
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav-right a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: #565961;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+
+body {
+
+  background-color:#ffffff;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px 0px;
+  }
+  .button {
+  background-color: #091425; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form {border: 3px solid #f1f1f1; margin-left:400px;margin-right:400px;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-bottom:18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #091425;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom:8px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  border-radius:4px;
+  font-family:Montserrat;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.home{
+	margin:80px;
+	
+  width: 84%;
+  height: 500px;
+  padding-top:10px;
+  padding-left: 30px;  
+  
+}
+.login{
+	margin:80px;
+	box-sizing: content-box;  
+  width: 84%;
+  height: 420px;
+  padding: 30px;  
+  border: 10px solid blue;
+}
+.left,.right{
+ box-sizing: content-box; 
+ height: 400px;
+ margin:20px;
+ border: 10px solid blue;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+</style>
+</head>
+
+<body style="font-family:'Times New Roman', Times, serif;background-color:#ffffff;overflow: scroll;">
+
+<div class="header">    
+ <div style="width:50%;float:left;font-size:2vw;text-align:left;color:white; padding-top:1%;padding-left:5%;">Book Recommedation System</div>
+  <div class="topnav-right"style="padding-top:0.5%;">
+    
+    <a  href="{{ url_for('home')}}">Home</a>
+	<a href="{{ url_for('extractor')}}">Recommend</a>
+  </div>
+</div>
+
+<div style="background-color:#ffffff;">
+<div style="width:100%;float:left;">
+<div style="font-size:27px;font-family:Montserrat;padding-left:10%;text-align:left;padding-top:1%;">
+<b>Recommended Books . . .</b></div><br><br>
+<div style="font-size:20px;font-family:Montserrat;margin-left:10%;margin-right:10%;padding:1%;text-align:justify;border:3px solid #ddd;border-radius:4px;">
+<table cellspacing="0">
+      <tr>
+         <th>Recommended Books</th>
+        
+      </tr>
+         
+      <tr>
+          <td>{{keyword[0]}}</td>
+    </tr>
+    <tr>
+         <td>{{keyword[1]}}</td>
+       </tr>
+      <tr> 
+         <td>{{keyword[2]}}</td>
+         </tr>
+         <tr>
+         <td>{{keyword[3]}}</td>
+         </tr>
+         <td>{{keyword[4]}} </td>
+       
+   </table>
+
+</div><br><br>
+
+
+<br><br>
+
+</div>
+
+</div>
+
+<div class="home">
+	
+<br>
+
+
+
+
+</div>
+
+</body>
+</html>
